@@ -1,0 +1,68 @@
+Step One: Simplifying Expressions
+    1. O(n + 10) - Simplified: O(n)
+    The constant term 10 doesn't significantly impact the growth rate as n becomes large.
+
+    2. O(100 * n) - Simplified: O(n)
+    The constant factor 100 doesn't change the linear growth of the function.
+
+    3. O(25) - Simplified: O(1)
+    This expression represents a constant-time complexity operation, regardless of the value.
+
+    4. O(n^2 + n^3) - Simplified: O(n^3)
+    The higher-order term dominates the growth rate as n becomes large.
+
+    5. O(n + n + n + n) - Simplified: O(n)
+    Combining like terms, the expression simplifies to O(n).
+
+    6. O(1000 * log(n) + n) - Simplified: O(n)
+    Asymptotically, the linear term dominates the logarithmic term's impact.
+
+    7. O(1000 * n * log(n) + n) - Simplified: O(n * log(n))
+    The linearithmic term (n * log(n)) dominates due to its growth rate.
+
+    8. O(2^n + n^2) - Simplified: O(2^n)
+    Exponential terms dominate other polynomial terms as n becomes large.
+
+    9. O(5 + 3 + 1) - Simplified: O(1)
+    The sum of constants is still a constant-time operation.
+
+    10. O(n + n^(1/2) + n^2 + n * log(n)^10) - Simplified: O(n^2)
+    Among the terms, n^2 grows the fastest as n increases.
+
+
+Step Two: Calculating Time Complexity
+    1. function logUpTo(n): Time Complexity - O(n)
+    The loop iterates n times, leading to a linear relationship.
+
+    2. function logAtLeast10(n): Time Complexity - O(max(n, 10))
+    The loop iterates up to n times if n is greater than 10, otherwise up to 10 times.
+
+    3. function logAtMost10(n): Time Complexity - O(min(n, 10))
+    The loop iterates up to 10 times if n is greater than 10, otherwise up to n times.
+
+    4. function onlyElementsAtEvenIndex(array): Time Complexity - O(n)
+    The loop iterates through each element of the array, which is a linear operation.
+
+    5. function subtotals(array): Time Complexity - O(n^2)
+    The nested loop structure results in quadratic time complexity.
+
+    6. function vowelCount(str): Time Complexity - O(n)
+    The loop iterates through each character in the input string, leading to linear complexity.
+
+Part 3 - Short Answer
+    1. True
+    2. True
+    3. False
+    4. O(n)
+    5. O(n)
+    6. O(n)
+    7. O(n * log(n))
+    9. O(n)
+    10. O(1)
+    11. O(1)
+    12. O(n)
+    13. O(n)
+    14. O(n)
+
+BONUS
+    The space complexity of the Object.keys() function is O(n). This is because the function creates and returns an array containing all the keys of the object, and the size of the array directly correlates with the number of properties in the object.
